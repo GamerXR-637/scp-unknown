@@ -14,15 +14,27 @@
 }
 
 body {
-    background-color: #000000;
-    color: rgb(0, 255, 42);
-    font-family: "Courier New", Courier, monospace;
+    background: linear-gradient(67deg, gray, rgb(34, 33, 33));
+    background-position-x: center;
+    background-size: cover;
 }
+
+body {
+    /* background-color: #000000; */
+    color: rgb(0, 255, 42);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*  Tiltes 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; Text */
+
+
 
 .title {
     text-align: center;
     font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
 }
+
 
 .log {
     margin-top: auto;
@@ -34,7 +46,8 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
 }
 
 .footer {
@@ -45,15 +58,16 @@ body {
     width: 100%;
 }
 
-.top-right-image {
+.tr-image {
     position: absolute;
-    top: 400px;
+    top: 300px;
     right: 20px;
     border: 3px solid rgb(0, 0, 0);
     width: auto;
     height: 305px;
     margin: auto;
     z-index: 10;
+    /* rotate: 45deg; */
 }
 
 .log-with-image {
@@ -66,7 +80,8 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 5px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
 }
 
 .w2 {
