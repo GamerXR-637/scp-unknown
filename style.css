@@ -23,6 +23,7 @@ body {
     /* background-color: #000000; */
     color: rgb(0, 255, 42);
     font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
 }
 
 /*  Tiltes 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; Text */
@@ -39,7 +40,8 @@ body {
 .log {
     margin-top: auto;
     white-space: pre-line;
-    width: auto;
+    width: 1100px;
+    max-width: 95vw;
     background-color: #141414;
     text-align: left;
     padding-left: 10px;
@@ -48,6 +50,29 @@ body {
     padding-right: 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+    .log {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .log {
+        width: 98vw;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .log {
+        width: 100vw;
+        font-size: 14px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
 }
 
 .footer {
@@ -56,18 +81,36 @@ body {
     padding-top: 20px;
     text-align: center;
     width: 100%;
+    font-size: 20px;
 }
 
 .tr-image {
     position: absolute;
-    top: 300px;
+    top: 290px;
     right: 20px;
     border: 3px solid rgb(0, 0, 0);
     width: auto;
     height: 305px;
-    margin: auto;
+    max-width: 90vw;
+    max-height: 40vh;
     z-index: 10;
-    /* rotate: 45deg; */
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    .tr-image {
+        height: 200px;
+        max-height: 30vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .tr-image {
+        height: 120px;
+        max-height: 20vh;
+        right: 10px;
+        top: 180px;
+    }
 }
 
 .log-with-image {
